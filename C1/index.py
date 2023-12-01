@@ -8,9 +8,10 @@ def exportDigits(string: str) -> int:
 
 with open('input.txt', 'r') as file:
   lines = file.readlines()
-  result = 0
-  for line in lines:
-    twoDogits = exportDigits(line)
-    result += twoDogits
-    print(twoDogits)
-  print(result)
+
+result = 0
+for line in lines:
+  twoDigits = exportDigits(line)
+  result += twoDigits
+  print(twoDigits)
+print(result)
